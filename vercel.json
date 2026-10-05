@@ -1,0 +1,1 @@
+{"cleanUrls":true,"rewrites":[{"source":"/","destination":"/1-index.html"},{"source":"/obrigado","destination":"/2-obrigado.html"},{"source":"/style.css","destination":"/3-style.css"},{"source":"/ney-prisma.jpg","destination":"/4-ney-prisma.jpg"},{"source":"/ney-perfil.jpg","destination":"/5-ney-perfil.jpg"}]}
