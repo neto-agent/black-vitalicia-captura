@@ -38,4 +38,15 @@
 <a class="form-fallback" href="https://api.leadconnectorhq.com/widget/form/0tgElMRqbTMBvrWZJvrI" target="_blank" rel="noopener noreferrer">Formulário não apareceu? Abrir em nova aba ↗</a>
 </section>
 <footer><span>BLACK VITALÍCIA <span class="dot">/</span> NEY FELIPE</span><span>11 DE NOVEMBRO · 20H · AO VIVO</span></footer>
-</div></body></html>
+<script>
+(function(){var fan=document.querySelector('.fan');if(!fan||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+var cards=[].slice.call(fan.querySelectorAll('.cv')),cur=0,tgt=0,raf=0;
+function measure(){var mid=fan.clientWidth/2;cards.forEach(function(c){if(!c.offsetWidth)return;c.style.setProperty('--dx',(mid-(c.offsetLeft+c.offsetWidth/2))+'px')})}
+function target(){var r=fan.getBoundingClientRect(),vh=innerHeight;var p=(vh*0.92-r.top)/(vh*0.5);return Math.max(0,Math.min(1,p))}
+function ease(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+function tick(){raf=0;tgt=target();cur+=(tgt-cur)*0.14;if(Math.abs(tgt-cur)<.001)cur=tgt;fan.style.setProperty('--p',ease(cur).toFixed(4));if(cur!==tgt)raf=requestAnimationFrame(tick)}
+function kick(){if(!raf)raf=requestAnimationFrame(tick)}
+addEventListener('scroll',kick,{passive:true});addEventListener('resize',function(){measure();kick()});
+measure();cur=target();fan.style.setProperty('--p',ease(cur).toFixed(4));
+})();
+</script></div></body></html>
