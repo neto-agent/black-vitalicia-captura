@@ -159,3 +159,6 @@ html.lead-open,html.lead-open body{overflow:hidden}
 @media(max-width:767px){.duo .d2{left:50%}}
 .duo .d2{left:50%}
 @media(max-width:767px){.duo .d2{left:52%}.duo .d1{left:0}}
+
+
+iframe[id^="inline-"] { color-scheme: normal; }
