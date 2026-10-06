@@ -159,3 +159,6 @@ html.lead-open,html.lead-open body{overflow:hidden}
 .lead iframe{background:#f3f3f3;filter:invert(1) hue-rotate(180deg);height:min(332px,calc(100dvh - 120px));margin-top:-14px}
 .lead-alt{background:#0c0c0c;color:#8d8d8d}
 @media(max-width:767px){.duo .d2{left:50%}}
+.black-page .lead-alt{color:#8d8d8d;text-decoration:underline;padding:12px}
+.duo .d2{left:50%}
+@media(max-width:767px){.duo .d2{left:52%}.duo .d1{left:0}}
