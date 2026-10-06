@@ -154,3 +154,8 @@ html.lead-open,html.lead-open body{overflow:hidden}
  .event strong{font-size:28px}
  .under-cta{margin-top:10px}
 }
+/* v4: dark popup form */
+.lead{background:#0c0c0c;border-color:#2a2a2a}
+.lead iframe{background:#f3f3f3;filter:invert(1) hue-rotate(180deg);height:min(312px,calc(100dvh - 120px));margin-top:-14px}
+.lead-alt{background:#0c0c0c;color:#8d8d8d}
+@media(max-width:767px){.duo .d2{left:50%}}
