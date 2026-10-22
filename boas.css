@@ -1,0 +1,48 @@
+:root{--bg:#0c0c0e;--panel:#141416;--ink:#f5f4f0;--soft:#a5a39b;--lime:#c9f24b;--line:#26262a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',-apple-system,sans-serif;font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+.skip{position:absolute;left:-999px;top:0;background:var(--lime);color:#0c0c0e;padding:.5rem 1rem;z-index:9}
+.skip:focus{left:0}
+.topbar{display:flex;align-items:center;justify-content:space-between;max-width:1060px;margin:0 auto;padding:1.2rem 1.25rem;border-bottom:1px solid var(--line)}
+.brand{font-weight:800;letter-spacing:.08em;font-size:.95rem}
+.chip{font-size:.75rem;font-weight:700;letter-spacing:.08em;color:var(--lime);border:1px solid rgba(201,242,75,.4);border-radius:999px;padding:.35rem .8rem;white-space:nowrap}
+section{max-width:1060px;margin:0 auto;padding:3rem 1.25rem}
+.hero{padding-top:3.2rem}
+.eyebrow{font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin-bottom:1.2rem}
+h1{font-weight:800;font-size:clamp(2.2rem,8vw,4rem);line-height:1.05;letter-spacing:-.02em;max-width:18ch}
+.hl{color:var(--lime)}
+.sub{margin-top:1.4rem;font-size:1.08rem;color:var(--soft);max-width:36em}
+.cta{display:table;margin-top:2.2rem;font-weight:800;font-size:1rem;letter-spacing:.07em;color:#101208;text-decoration:none;background:var(--lime);padding:1em 1.6em;border-radius:10px;box-shadow:0 10px 30px rgba(201,242,75,.22);transition:transform .12s ease,box-shadow .12s ease}
+.cta:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(201,242,75,.3)}
+.count{margin-top:2.4rem;border-top:1px solid var(--line);padding-top:1.4rem}
+.count-label{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.count-nums{display:flex;gap:1.6rem;margin-top:.6rem}
+.count-nums div{display:flex;flex-direction:column}
+.count-nums b{font-size:2rem;font-weight:800;font-variant-numeric:tabular-nums;line-height:1.1}
+.count-nums i{font-style:normal;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+.card{background:#fff;border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.5);padding:1.5rem 1.2rem;color:#171410;max-width:600px}
+.card-title{font-weight:800;font-size:1.5rem;letter-spacing:-.01em;margin-bottom:1rem}
+.card iframe{width:100%;min-height:380px;border:0;border-radius:8px}
+.consent{margin-top:1rem;font-size:.88rem;color:#57534a}
+.prova h2{font-weight:800;font-size:clamp(1.7rem,6vw,2.4rem);letter-spacing:-.02em;margin-bottom:1.6rem}
+.cards{display:grid;grid-template-columns:1fr;gap:.9rem}
+.mini{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.2rem}
+.mini b{display:block;font-size:1.05rem;font-weight:700}
+.mini span{display:block;margin-top:.25rem;font-size:.92rem;color:var(--soft)}
+.prova h3{margin-top:2.2rem;font-weight:700;font-size:1.15rem;color:var(--soft)}
+.grade{list-style:none;counter-reset:c;margin-top:1rem;columns:1}
+.grade li{counter-increment:c;position:relative;padding:.5rem 0 .5rem 2.2rem;border-top:1px solid var(--line);font-size:.98rem;break-inside:avoid}
+.grade li::before{content:counter(c,decimal-leading-zero);position:absolute;left:0;top:.55rem;font-size:.8rem;font-weight:700;color:var(--lime);font-variant-numeric:tabular-nums}
+.plus{margin-top:1.2rem;font-weight:600;color:var(--ink)}
+.evento h2{font-weight:800;font-size:clamp(1.8rem,6.5vw,2.6rem);letter-spacing:-.02em}
+footer{display:flex;flex-wrap:wrap;gap:.3rem 1.5rem;justify-content:space-between;max-width:1060px;margin:0 auto;padding:1.4rem 1.25rem 2.4rem;border-top:1px solid var(--line);font-size:.85rem;color:var(--soft)}
+@media(min-width:760px){
+  .hero .sub{max-width:44em}
+  .cards{grid-template-columns:repeat(4,1fr)}
+  .grade{columns:2;column-gap:2.5rem}
+  .cadastro .card{margin:0 auto}
+  .evento{text-align:center}
+  .evento .cta{margin-left:auto;margin-right:auto}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
