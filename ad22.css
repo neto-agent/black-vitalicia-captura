@@ -48,3 +48,13 @@ footer{display:flex;flex-wrap:wrap;gap:.4rem 1.5rem;justify-content:space-betwee
 .evento .big3{margin:0 auto}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cta{transition:none}}
+.hero-list{display:none}
+@media(min-width:900px){
+.hero-cols{display:grid;grid-template-columns:1.15fr .85fr;gap:2.5rem;align-items:start}
+.hero-list{display:block;position:relative}
+.notebook.mini{padding:1rem 1rem 1rem 1.4rem;transform:rotate(1deg)}
+.notebook.mini ol{columns:1}
+.notebook.mini li{min-height:33px;line-height:33px;font-size:1.02rem}
+.notebook.mini .fade{position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(transparent,#fffdf8 85%);pointer-events:none}
+.notebook.mini{position:relative;overflow:hidden;max-height:420px}
+}
